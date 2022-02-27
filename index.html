@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-color: #1f7468;" onload="carregarComponentes()">
+    <h1 class="centralizar" style="margin-bottom: 0;">Dono da vez</h1>
+    <h2 id="vez" class="centralizar">X</h2>
+    <div id="game">
+        <div id="player-x" class="centralizar">
+            0
+        </div>
+        <div class="tabuleiro">
+            <div class="line">
+                <div class="espaco espaco1">
+                    <canvas id="a1" class="indice" style="background-color: rgba(255, 255, 255, 0.568);" onclick="jogada('a1', 0, 0)">Seu navegador não suporta o canvas</canvas>
+        
+                </div>
+                <div class="espaco espaco2">
+                    <canvas id="a2" class="indice" style="background-color: rgba(255, 255, 255, 0.568);" onclick="jogada('a2', 0, 1)"></canvas>
+        
+                </div>
+                <div class="espaco espaco3">
+                    <canvas id="a3" class="indice" style="background-color: rgba(255, 255, 255, 0.568);" onclick="jogada('a3', 0, 2)"></canvas>
+        
+                </div>
+            </div>
+            <div class="line">
+                <div class="espaco espaco4">
+                    <canvas id="b1" class="indice" style="background-color: rgba(255, 255, 255, 0.568);" onclick="jogada('b1', 1, 0)"></canvas>
+        
+                </div>
+                <div class="espaco espaco5">
+                    <canvas id="b2" class="indice" style="background-color: rgba(255, 255, 255, 0.568);" onclick="jogada('b2', 1, 1)"></canvas>
+        
+                </div>
+                <div class="espaco espaco6">
+                    <canvas id="b3" class="indice" style="background-color: rgba(255, 255, 255, 0.568);" onclick="jogada('b3', 1, 2)"></canvas>
+        
+                </div>
+            </div>
+            <div class="line">
+                <div class="espaco espaco7">
+                    <canvas id="c1" class="indice" style="background-color: rgba(255, 255, 255, 0.568);" onclick="jogada('c1', 2, 0)"></canvas>
+        
+                </div>
+                <div class="espaco espaco8">
+                    <canvas id="c2" class="indice" style="background-color: rgba(255, 255, 255, 0.568);" onclick="jogada('c2', 2, 1)"></canvas>
+        
+                </div>
+                <div class="espaco espaco9">
+                    <canvas id="c3" class="indice" style="background-color: rgba(255, 255, 255, 0.568);" onclick="jogada('c3', 2, 2)"></canvas>
+        
+                </div>
+            </div>
+            
+    
+    
+        </div>
+        <div id="player-o" class="centralizar">
+            0
+        </div>
+    </div>
+    
+    
+    
+    <div id="msg" class="centralizar">
+        Muito bem
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
